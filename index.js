@@ -55,6 +55,7 @@ const corsOptions = {
     origin: '*',
     credentials: true,
 };
+
 app.use(cors(corsOptions));
 
 app.get('/api/transaction_info', async function (req, res) {
