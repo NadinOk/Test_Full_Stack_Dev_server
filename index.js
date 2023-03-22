@@ -52,8 +52,8 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
-    optionsSuccessStatus: 200
+    origin: '*',
+    credentials: true,
 };
 app.use(cors(corsOptions));
 
